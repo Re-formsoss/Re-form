@@ -1303,8 +1303,8 @@ input, select, textarea {
 
 
 #header .logo img {
-    width: 150%;
-    height: 150%;
+    width: 200%;
+    height: 200%;
     display: block;
     object-fit: cover;
     filter: brightness(1.15);
@@ -1672,6 +1672,7 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
 
 
 
