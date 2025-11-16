@@ -1301,16 +1301,10 @@ input, select, textarea {
     overflow: hidden;
 }
 
-           #header .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden; /* keby logo trochu trčalo, oreže ho do kruhu */
-}
 
 #header .logo img {
-    max-width: 400%;
-    max-height: 400%;
+    max-width: 200%;
+    max-height: 200%;
     display: block;
     object-fit: contain;
     filter: brightness(1.15);
@@ -1678,6 +1672,7 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
 
 
 
