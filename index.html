@@ -378,9 +378,31 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var hour = new Date().getHours();
+    var bgImage = "";
+
+    if (hour >= 5 && hour < 11) {
+        bgImage = "images/bg-morning.jpg"; // ráno
+    } 
+    else if (hour >= 11 && hour < 17) {
+        bgImage = "images/bg-day.jpg"; // deň
+    } 
+    else if (hour >= 17 && hour < 20) {
+        bgImage = "images/bg-evening.jpg"; // večer
+    } 
+    else {
+        bgImage = "images/bg-night.jpg"; // noc
+    }
+
+    document.documentElement.style.setProperty("--dynamic-bg", `url(${bgImage})`);
+});
+</script>
 
 	</body>
 </html>
+
 
 
 
