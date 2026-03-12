@@ -142,7 +142,7 @@
                 <div class="col-xxl-8">
                   <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
                     data-aos-duration="1000">
-                    <h2 class="mb-0">Nie vždy si vieš zavolat pomoc a preto sme tu my RE-FORM.</h2>
+                    <h2 class="mb-0">Nie vždy si vieš zavolat pomoc a preto sme tu my Re-form.</h2>
                   </div>
                 </div>
               </div>
@@ -931,63 +931,115 @@
     </section>
 
    
-
-    <!--  Get in touch Section -->
-    <section class="get-in-touch py-5 py-lg-11 py-xl-12">
-      <div class="container">
-        <div class="d-flex flex-column gap-5 gap-xl-10">
-          <div class="row gap-7 gap-xl-0">
-            <div class="col-xl-4 col-xxl-4">
-              <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
-                data-aos-duration="1000">
-                <span
-                  class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">10</span>
-                <hr class="border-line bg-white">
-                <span class="badge text-bg-dark">Kontaktuj nás</span>
-              </div>
-            </div>
-            <div class="col-xl-8 col-xxl-7">
-              <div class="row">
-                <div class="col-xxl-8">
-                  <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
-                    data-aos-duration="1000">
-                    <h2 class="mb-0">Get in touch</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
+<!--  Get in touch Section -->
+<section class="get-in-touch py-5 py-lg-11 py-xl-12">
+  <div class="container">
+    <div class="d-flex flex-column gap-5 gap-xl-10">
+      <div class="row gap-7 gap-xl-0">
+        <div class="col-xl-4 col-xxl-4">
+          <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
+            data-aos-duration="1000">
+            <span
+              class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">10</span>
+            <hr class="border-line bg-white">
+            <span class="badge text-bg-dark">Kontaktuj nás</span>
           </div>
-          <div class="row justify-content-between gap-7 gap-xl-0">
-            <div class="col-xl-3">
-              <p class="mb-0 fs-5" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Let’s collaborate
-                and create something amazing! Tell me about your project—I’m all
-                ears.</p>
-            </div>
-            <div class="col-xl-8">
-              <form class="d-flex flex-column gap-7" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                <div>
-                  <input type="text" class="form-control border-bottom border-dark" id="formGroupExampleInput"
-                    placeholder="Name">
-                </div>
-                <div>
-                  <input type="email" class="form-control border-bottom border-dark" id="exampleInputEmail1"
-                    placeholder="Email" aria-describedby="emailHelp">
-                </div>
-                <div>
-                  <textarea class="form-control border-bottom border-dark" id="exampleFormControlTextarea1"
-                    placeholder="Tell us about your project" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn w-100 justify-content-center">
-                  <span class="btn-text">Odoslať</span>
-                  <iconify-icon icon="lucide:arrow-up-right"
-                    class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
-                </button>
-              </form>
+        </div>
+        <div class="col-xl-8 col-xxl-7">
+          <div class="row">
+            <div class="col-xxl-8">
+              <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
+                data-aos-duration="1000">
+                <h2 class="mb-0">Ozvi sa nám</h2>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+
+      <div class="row justify-content-between gap-7 gap-xl-0">
+        <div class="col-xl-3">
+          <p class="mb-0 fs-5" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+            Máš otázku? Napíš nám a radi sa na to spolu pozrieme.
+          </p>
+        </div>
+
+        <div class="col-xl-8">
+          <form id="contact-form" class="d-flex flex-column gap-7" data-aos="fade-up" data-aos-delay="200"
+            data-aos-duration="1000">
+            <div>
+              <input
+                type="text"
+                class="form-control border-bottom border-dark"
+                id="formGroupExampleInput"
+                name="name"
+                placeholder="Meno"
+                required>
+            </div>
+
+            <div>
+              <input
+                type="email"
+                class="form-control border-bottom border-dark"
+                id="exampleInputEmail1"
+                name="email"
+                placeholder="Email"
+                aria-describedby="emailHelp"
+                required>
+            </div>
+
+            <div>
+              <textarea
+                class="form-control border-bottom border-dark"
+                id="exampleFormControlTextarea1"
+                name="message"
+                placeholder="Tell us about your project"
+                rows="3"
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn w-100 justify-content-center">
+              <span class="btn-text">Odoslať</span>
+              <iconify-icon icon="lucide:arrow-up-right"
+                class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
+            </button>
+
+            <p id="form-status" style="margin: 0;"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init({
+    publicKey: "YOUR_PUBLIC_KEY"
+  });
+
+  const form = document.getElementById("contact-form");
+  const statusText = document.getElementById("form-status");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    statusText.textContent = "Odosielam správu...";
+
+    emailjs.sendForm(
+      "service_3dqehzq",
+      "YOUR_TEMPLATE_ID",
+      form
+    ).then(() => {
+      statusText.textContent = "Správa bola úspešne odoslaná.";
+      form.reset();
+    }).catch((error) => {
+      statusText.textContent = "Nepodarilo sa odoslať správu. Skús to znova.";
+      console.error("EmailJS error:", error);
+    });
+  });
+</script>
 
   </div>
 
@@ -996,11 +1048,11 @@
       <div class="row">
         <div class="col-xl-5 mb-8 mb-xl-0">
           <div class="d-flex flex-column gap-8 pe-xl-5">
-            <h2 class="mb-0 text-white">Build something together?</h2>
+            <h2 class="mb-0 text-white">Nejake pripomienky? neboj sa nám ozvať</h2>
             <div class="d-flex flex-column gap-2">
-              <a href="MAIL TU" target="_blank" class="link-hover hstack gap-3 text-white fs-5">
+              <a href="MAILTO:reformsoss@gmail.com" target="_blank" class="link-hover hstack gap-3 text-white fs-5">
                 <iconify-icon icon="lucide:arrow-up-right" class="fs-7 text-primary"></iconify-icon>
-               reformsoss@gmail.com
+               
               </a>
               <a href="https://maps.app.goo.gl/wNaszuZDQmw39mPG9" target="_blank"
                 class="link-hover hstack gap-3 text-white fs-5">
@@ -1013,21 +1065,21 @@
         <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
           <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
             <li><a class="link-hover fs-5 text-white" href="index.html">Home</a></li>
-            <li><a class="link-hover fs-5 text-white" href="about-us.html">About</a></li>
+            <li><a class="link-hover fs-5 text-white" href="about-us.html">O nás</a></li>
             <li><a class="link-hover fs-5 text-white" id="services" href="#services">Services</a></li>
-            <li><a class="link-hover fs-5 text-white" href="projects.html">Work</a></li>
+            <li><a class="link-hover fs-5 text-white" href="projects.html">Projekty</a></li>
             <li><a class="link-hover fs-5 text-white" href="terms-and-conditions.html">Terms</a></li>
             <li><a class="link-hover fs-5 text-white" href="privacy-policy.html">Privacy Policy</a></li>
           </ul>
         </div>
         <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
           <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
-            <li><a class="link-hover fs-5 text-white" href="#!">Facebook</a></li>
-            <li><a class="link-hover fs-5 text-white" href="#!">Instagram</a></li>
+            <li><a class="link-hover fs-5 text-white" href="https://www.tiktok.com/@re_form1">TikTok</a></li>
+            <li><a class="link-hover fs-5 text-white" href="https://www.instagram.com/reform3.n/">Instagram</a></li>
           </ul>
         </div>
         <div class="col-md-4 col-xl-3 mb-8 mb-xl-0">
-          <p class="mb-0 text-white text-opacity-70 text-md-end">© RE-form copyright 2026</p>
+          <p class="mb-0 text-white text-opacity-70 text-md-end">© Re-form copyright 2026</p>
         </div>
       </div>
     </div>
