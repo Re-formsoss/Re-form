@@ -16790,3 +16790,8 @@ ul {
   color: var(--bs-dark);
   background-color: var(--bs-white);
 }/*# sourceMappingURL=styles.css.map */
+.marquee-tag img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+}
