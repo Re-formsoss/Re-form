@@ -16791,7 +16791,7 @@ ul {
   background-color: var(--bs-white);
 }/*# sourceMappingURL=styles.css.map */
 .marquee-tag img {
-  height: 130px;
+  height: 300px;
   width: auto;
   object-fit: contain;
   transition: transform 0.3s ease;
@@ -16809,5 +16809,5 @@ ul {
 }
 
 section {
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
