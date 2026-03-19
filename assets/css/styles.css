@@ -16801,3 +16801,6 @@ ul {
   max-height: 1000px;
   width: auto;
 }
+button, .btn {
+  display: none !important;
+}
