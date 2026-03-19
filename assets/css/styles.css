@@ -16801,3 +16801,7 @@ ul {
   max-height: 1000px;
   width: auto;
 }
+.sponzori .marquee-tag img {
+  max-width: 300px;
+  height: auto;
+}
